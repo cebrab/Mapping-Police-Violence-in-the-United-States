@@ -1,0 +1,5 @@
+#ignoring data files and node modules
+
+*.geojson
+node_modules/
+*.csv

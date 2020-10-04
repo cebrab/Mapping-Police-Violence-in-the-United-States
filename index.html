@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset='UTF-8' />
+    <title>Police Killings</title>
+    <style>
+    #container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+    #container > * {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    #tooltip {
+         position: absolute;
+         background: black;
+         margin: 10px; padding: 10px;
+         color: white;
+         max-width: 50%;
+         border-radius: 25px;
+     }
+    </style>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.4.0/mapbox-gl.css' rel='stylesheet' />
+      <script src="https://api.mapbox.com/mapbox-gl-js/v1.10.1/mapbox-gl.js"></script>
+    <script src="https://unpkg.com/@deck.gl/aggregation-layers@^8.0.0/dist.min.js"></script>
+  </head>
+  <body>
+    <div id="container">
+      <div id="map"></div>
+      <canvas id="deck-canvas"></canvas>
+    </div>
+      <div id="tooltip"></div>
+    <script src='app.js'></script>
+  </body>
+</html>
