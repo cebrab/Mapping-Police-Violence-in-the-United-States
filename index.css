@@ -1,0 +1,79 @@
+body {
+  background-color: #343434;
+  color: white;
+  font-family: 'Libre Baskerville', serif;
+  margin: 0;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+#main-container {
+  padding: 5px;
+}
+
+#header {
+  width: 100vw;
+}
+
+  #header * {
+    text-align: center;
+  }
+
+  #header h1{
+    font-size: 64px;
+  }
+
+  #header h3{
+    font-size: 40px;
+    font-style: italic;
+  }
+
+#container {
+  position: relative;
+  width: 95vw;
+  height: 95vh;
+  margin: auto;
+}
+#container > * {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+}
+
+#map-instructions {
+  padding: 20px;
+}
+  #map-instructions h3 {
+    font-size: 28px;
+  }
+
+
+#footer {
+  padding: 20px 0;
+  text-align: center;
+  background-color: black;
+}
+
+  #footer a {
+      border-radius: 50%;
+      height: 40px;
+      width: 40px;
+      color: white;
+      text-decoration: none;
+  }
+
+  #footer i {
+    margin: 0 5px;
+  }
+
+#tooltip {
+     position: absolute;
+     background: black;
+     margin: 10px; padding: 10px;
+     color: white;
+     max-width: 50%;
+     border-radius: 25px;
+     display: hidden;
+ }

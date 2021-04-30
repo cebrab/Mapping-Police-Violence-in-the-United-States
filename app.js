@@ -14,8 +14,7 @@ const INITIAL_VIEW_STATE = {
 };
 
 // Set your mapbox token here
-mapboxgl.accessToken = 'pk.eyJ1IjoiYmxjZWJyYSIsImEiOiJja2FvcjE5em8wNm1kMnhxeXpjb3g0MmI5In0.N5xiWcB9OB_RuGLo81CE0A';
-//process.env.MapboxAccessToken; // eslint-disable-line
+mapboxgl.accessToken = process.env.MapboxAccessToken; // eslint-disable-line
 
 const map = new mapboxgl.Map({
   container: 'map',
