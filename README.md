@@ -1,11 +1,8 @@
-<div align="center">
-   <img width="150" heigth="150" src="https://webpack.js.org/assets/icon-square-big.svg" />
-</div>
+# Map Visualization of Police-Related Deaths in the United States
 
-## Example: Use deck.gl with Mapbox
-
-Uses [Webpack](https://github.com/webpack/webpack) to bundle files and serves it
-with [webpack-dev-server](https://webpack.js.org/guides/development/#webpack-dev-server).
+## About
+Uses a [DeckGL](https://deck.gl/) scatterplot layer on top of a [Mapbox](https://docs.mapbox.com/mapbox-gl-js/overview/) map with data from [Fatal Encounters](https://fatalencounters.org/).  
+This was my final project for my Introduction to Information Visualization class at Oregon State University.
 
 ## Usage
 
@@ -26,6 +23,8 @@ npm install
 # or
 yarn
 ```
+
+Also, you will need a dataset in GEOJSON format. The data I used came from [Fatal Encounters](https://fatalencounters.org/). `app.js` is set up to use data from a file called `policeviolence.geojson`.
 
 Commands:
 * `npm start` is the development target, to serves the app and hot reload.
